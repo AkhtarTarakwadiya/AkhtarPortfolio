@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .coming-soon {
+            max-width: 800px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 80px;
+            max-width: 100px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .time-box h2 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .time-box span {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .time-box {
+                padding: 10px 15px;
+            }
+
+            .time-box h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>🚀 Something Awesome is Coming Soon!</h1>
+        <p>We're working hard to bring you a great experience. Stay tuned!</p>
+
+        <div class="countdown">
+            <div class="time-box">
+                <h2 id="days">00</h2>
+                <span>Days</span>
+            </div>
+            <div class="time-box">
+                <h2 id="hours">00</h2>
+                <span>Hours</span>
+            </div>
+            <div class="time-box">
+                <h2 id="minutes">00</h2>
+                <span>Minutes</span>
+            </div>
+            <div class="time-box">
+                <h2 id="seconds">00</h2>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2024 Akhtar Tarakwadiya. All Rights Reserved.</footer>
+
+    <script>
+        const countdown = () => {
+            const targetDate = new Date('2025-04-01T00:00:00').getTime();
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const days = Math.floor(gap / day);
+            const hours = Math.floor((gap % day) / hour);
+            const minutes = Math.floor((gap % hour) / minute);
+            const seconds = Math.floor((gap % minute) / second);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
+</body>
+</html>
