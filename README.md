@@ -37,9 +37,6 @@ I don’t just stop at games, e-commerce, and utilities. My portfolio includes *
 ### **Tools I Rely On**  
 - 🔨 **Git**, **GitHub**, **GitLab**, **Visual Studio Code**, **Composer**, **npm**
 
-### **Other Special Skills**  
-- 📊 **Machine Learning**, **Data Analytics**, **AI**, **RESTful APIs**, **Data Visualization**, **Power BI**, **UI/UX Design**, **Responsive Web Design**
-
 ---
 
 ## ✨ **Let’s Build Something Amazing Together!** 🌍
