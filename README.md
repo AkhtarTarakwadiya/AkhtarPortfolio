@@ -8,23 +8,18 @@
 
 ### 🎮 **GameZone** – *Play. Explore. Win!* 🚧 **COMING SOON!**  
 👾 Step into the world of **GameZone**—where gaming meets innovation! From **new releases** to **timeless classics**, this platform offers everything for every gamer. With **secure downloads**, **easy navigation**, and **seamless checkout**, it’s your one-stop destination for all things gaming. Ready to embark on your next adventure?  
-🔗 [💥 Explore GameZone →](#)
 
 ### 💼 **JobFusion** – *Your Future Starts Here!* 🚧 **COMING SOON!**  
 ✨ **JobFusion** is your **ultimate career companion**! Designed to connect job seekers with opportunities, **JobFusion** lets you browse, apply, and track your job applications in real-time—making the **job search process** smooth, easy, and stress-free. Your dream job is just a click away!  
-🔗 [🌟 Explore JobFusion →](#)
 
 ### 🛒 **ShopStorm** – *Shop Smart. Shop Fast. Shop Storm!* 🚧 **COMING SOON!**  
 🔥 **ShopStorm** is not just another e-commerce site—it’s an **experience**! From **exclusive deals** to **user-friendly navigation**, every aspect of your shopping journey is crafted for **speed** and **satisfaction**. **Add to cart**, **checkout**, and get your **goods delivered**, all in a flash! Ready to **shop ‘til you drop**?  
-🔗 [💥 Explore ShopStorm →](#)
 
 ### 🧮 **QuickCalc** – *The Fastest Way to Calculate!*  
 ⚡️ When you need a calculator that’s **fast, accurate**, and **always on hand**, **QuickCalc** is the answer! With a **minimalist design** and **no distractions**, it’s your go-to for every quick calculation.  
-🔗 [⚡️ Explore QuickCalc →](#)
 
 ### 🌟 **And a lot more...**  
 I don’t just stop at games, e-commerce, and utilities. My portfolio includes **cutting-edge data analytics**, **machine learning models**, and much more. From **personal projects** to **professional challenges**, I strive to push the limits of what’s possible with **technology**.  
-🔗 [🌟 Explore All Projects →](#)
 
 ---
 
