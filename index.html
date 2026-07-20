@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="images/akhtar.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	<!-- <link rel="shortcut icon" href="images/Me-bg.png" type="image/x-icon"> -->
 
 	<style>
@@ -335,19 +335,7 @@
 		   RESPONSIVE OVERRIDES & PIXEL-PERFECT MOBILE FIXES
 		   ========================================================================== */
 		
-		/* Circular Avatar for Mobile View in Hero */
-		.mobile-avatar {
-			display: none;
-			width: 160px;
-			height: 160px;
-			border-radius: 50%;
-			background-image: url('images/akhtar.png');
-			background-size: cover;
-			background-position: center top;
-			margin: 0 auto 20px auto;
-			border: 4px solid #ffbd39;
-			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-		}
+		/* Mobile avatar styles removed */
 
 		/* Extra Large Screens & Desktops */
 		@media (min-width: 1200px) {
@@ -405,9 +393,6 @@
 			}
 			.one-third {
 				display: none !important; /* Hide side-split image on mobile */
-			}
-			.mobile-avatar {
-				display: block; /* Show circular avatar instead */
 			}
 
 			/* Font Sizes Scaling */
@@ -529,14 +514,12 @@
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/akhtar.png);">
+						<div class="one-third js-fullheight order-md-last img">
 							<div class="overlay"></div>
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<div class="mobile-avatar"></div>
 								<span class="subheading">Hello!</span>
 								<h1 class="mb-4 mt-3">I'm <span>Akhtar Tarakwadiya</span></h1>
 
@@ -607,9 +590,9 @@
 				<!-- Profile Image Section -->
 				<div class="col-12 col-md-5 d-flex mb-4">
 					<div class="img-about img d-flex align-items-stretch w-100"
-						style="background-image: url('images/akhtar.png'); border-radius: 15px; min-height: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+						style="border-radius: 15px; min-height: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); backdrop-filter: blur(10px);">
 						<div class="overlay w-100 p-4"
-							style="background: linear-gradient(to top, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.2) 100%); display: flex; flex-direction: column; justify-content: flex-end;">
+							style="background: linear-gradient(to top, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.2) 100%); display: flex; flex-direction: column; justify-content: flex-end; backdrop-filter: blur(5px);">
 							<div class="about-info text-left">
 								<h3 class="text-white font-weight-bold mb-3"
 									style="font-size: 1.6rem; border-bottom: 2px solid #ffbd39; padding-bottom: 0.5rem; display: inline-block;">
