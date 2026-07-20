@@ -1330,7 +1330,6 @@
 
 		<script>
 			// Typing animation script placed outside Owl Carousel to avoid duplicate runs on cloned elements
-			const typingAnimationElement = document.getElementById('typing-animation');
 			const typingTexts = [
 				'PHP-Laravel Developer',
 				'Full-Stack Web Developer',
@@ -1341,15 +1340,25 @@
 			let isDeleting = false;
 
 			function type() {
-				if (!typingAnimationElement) return;
+				// Query all instances including cloned instances created by Owl Carousel
+				const elements = document.querySelectorAll('#typing-animation');
+				if (elements.length === 0) return;
+				
 				const currentText = typingTexts[textIndex];
+				let updatedText = "";
+				
 				if (isDeleting) {
-					typingAnimationElement.textContent = currentText.substring(0, charIndex - 1);
+					updatedText = currentText.substring(0, charIndex - 1);
 					charIndex--;
 				} else {
-					typingAnimationElement.textContent = currentText.substring(0, charIndex + 1);
+					updatedText = currentText.substring(0, charIndex + 1);
 					charIndex++;
 				}
+
+				// Update text on all matching elements simultaneously
+				elements.forEach(el => {
+					el.textContent = updatedText;
+				});
 
 				let typeSpeed = 100;
 				if (isDeleting) {
