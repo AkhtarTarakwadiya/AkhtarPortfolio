@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Coming Soon | Akhtar Tarakwadiya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+            background: #0c0c0c;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -19,22 +19,32 @@
             overflow: hidden;
         }
 
+        /* Glassmorphic Card */
         .coming-soon {
-            max-width: 800px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            padding: 3.5rem 2.5rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #ffbd39;
+            font-weight: 700;
         }
 
         p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
         }
 
         .countdown {
@@ -42,42 +52,78 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+            margin-bottom: 35px;
         }
 
         .time-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px 20px;
+            background: rgba(255, 189, 57, 0.04);
+            border: 1px solid rgba(255, 189, 57, 0.15);
+            padding: 15px 10px;
             border-radius: 10px;
             text-align: center;
             flex: 1;
             min-width: 80px;
             max-width: 100px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .time-box:hover {
+            transform: translateY(-3px);
+            border-color: rgba(255, 189, 57, 0.3);
         }
 
         .time-box h2 {
             font-size: 2.2rem;
             margin: 0;
+            color: #ffbd39;
+            font-weight: 700;
         }
 
         .time-box span {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background-color: #ffbd39;
+            color: #000;
+            padding: 0.8rem 2.2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(255, 189, 57, 0.25);
+            border: 1px solid #ffbd39;
+        }
+
+        .btn-back:hover {
+            background-color: transparent;
+            color: #ffbd39;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 189, 57, 0.15);
         }
 
         footer {
             position: absolute;
-            bottom: 10px;
+            bottom: 20px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             width: 100%;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.5px;
         }
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             p {
@@ -85,29 +131,19 @@
             }
 
             .time-box {
-                padding: 10px 15px;
+                padding: 10px 5px;
             }
 
             .time-box h2 {
                 font-size: 1.8rem;
             }
         }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="coming-soon">
-        <h1>🚀 Something Awesome is Coming Soon!</h1>
-        <p>We're working hard to bring you a great experience. Stay tuned!</p>
+        <h1>🚀 Under Active Development</h1>
+        <p>I am currently polishing and deploying this application module. It will be live soon! Stay tuned.</p>
 
         <div class="countdown">
             <div class="time-box">
@@ -127,33 +163,50 @@
                 <span>Seconds</span>
             </div>
         </div>
+
+        <a href="index.html" class="btn-back">Return to Portfolio</a>
     </div>
 
-    <footer>© 2024 Akhtar Tarakwadiya. All Rights Reserved.</footer>
+    <footer>&copy; <span id="year"></span> Akhtar Tarakwadiya. All Rights Reserved.</footer>
 
     <script>
+        // Set dynamic copyright year
+        document.getElementById('year').innerText = new Date().getFullYear();
+
         const countdown = () => {
-            const targetDate = new Date('2025-10-01T00:00:00').getTime();
-            const now = new Date().getTime();
-            const gap = targetDate - now;
+            // Target date set to 60 days in future from current time for a dynamic active countdown
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 45); // Set 45 days countdown dynamically
+            const targetTime = targetDate.getTime();
+            
+            // Or use a static date if preferred:
+            const staticTarget = new Date('2026-10-01T00:00:00').getTime();
 
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
+            const updateTime = () => {
+                const now = new Date().getTime();
+                const gap = staticTarget - now;
 
-            const days = Math.floor(gap / day);
-            const hours = Math.floor((gap % day) / hour);
-            const minutes = Math.floor((gap % hour) / minute);
-            const seconds = Math.floor((gap % minute) / second);
+                const second = 1000;
+                const minute = second * 60;
+                const hour = minute * 60;
+                const day = hour * 24;
 
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
+                const days = Math.floor(gap / day);
+                const hours = Math.floor((gap % day) / hour);
+                const minutes = Math.floor((gap % hour) / minute);
+                const seconds = Math.floor((gap % minute) / second);
+
+                document.getElementById('days').innerText = String(Math.max(0, days)).padStart(2, '0');
+                document.getElementById('hours').innerText = String(Math.max(0, hours)).padStart(2, '0');
+                document.getElementById('minutes').innerText = String(Math.max(0, minutes)).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(Math.max(0, seconds)).padStart(2, '0');
+            };
+
+            updateTime();
+            setInterval(updateTime, 1000);
         };
 
-        setInterval(countdown, 1000);
+        countdown();
     </script>
 </body>
 </html>
